@@ -184,6 +184,45 @@ body {
 }
 
 /*   hero   */
+/*Add HTML sceleton": {
+		"prefix": "!!",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"ru\">",
+			"",
+			"  <head>",
+			"    <meta charset=\"UTF-8\">",
+			"	   <title>${1:Документ}</title>",
+			"    <link
+      "		   href=\"https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css\""
+      "		   rel=\"stylesheet\""
+    	"	   />
+			"    <link rel=\"stylesheet\" href=${2:\"./style.css\"}/>",
+			"  </head>",
+			"",
+			"  <body>",
+			"    $0",
+			"  </body>",
+			"",
+			"</html>"
+		],
+		"description": "HTML 5 ru"
+
+*/
+
+.overlay{
+    max-width:1600px;
+    margin: 0 auto;
+
+    background-position: center;
+    background-image: linear-gradient (to botton, rgba(47, 48, 58, 0.4)), url(../photo/other-foto/overlay.jpg)
+    
+
+
+    /*  имедж оверлей ++*/
+    background: rgba(47, 48, 58, 0.4);
+}
+
 
 .hero-scn{
     padding-top: 200px;
@@ -515,6 +554,7 @@ address{
 
     /*   коробка с фото    */
 
+    
 .img-portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -523,18 +563,27 @@ address{
 }
 
 /* отступы в портфолио фото  */
+
 .img-portfolio .item{
     margin-right: 30px;
     margin-bottom:30px;
 
-   
-
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+
+
+}
+
+.img-portfolio .item:hover{
+    cursor: pointer;
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
+
+
 .img-portfolio .item:nth-child(3n){
     margin-right:0;
 }
