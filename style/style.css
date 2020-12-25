@@ -157,9 +157,11 @@ body {
     margin-right: 50px;
 }
 
+
 .conect li {
-    display: block;
+    display: inline-block;
     align-items: center;
+
     font-family: var(--primary-font-famaly);
     font-weight: 500;
     font-size: 14px;
@@ -177,6 +179,44 @@ body {
 }
 
 
+
+
+
+
+/*  befor conect*/
+.icon-mail{
+    width: 15px;
+    height: 10px;
+    color: currentColor;
+}
+
+
+
+.icon-mail:focus,
+.icon-mail:hover{
+    color:var(--accent-color);
+}
+
+.icon-smartfon{
+width: 16px;
+height: 12px;
+color: currentColor;
+}
+
+.mail ::before{
+    content: "";
+
+
+    
+}
+
+
+
+
+
+
+
+
 /* body color */
 
 body {
@@ -188,46 +228,26 @@ body {
 /*   hero   */
 
 
-/*Add HTML sceleton": {
-		"prefix": "!!",
-		"body": [
-			"<!DOCTYPE html>",
-			"<html lang=\"ru\">",
-			"",
-			"  <head>",
-			"    <meta charset=\"UTF-8\">",
-			"	   <title>${1:Документ}</title>",
-			"    <link
-      "		   href=\"https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css\""
-      "		   rel=\"stylesheet\""
-    	"	   />
-			"    <link rel=\"stylesheet\" href=${2:\"./style.css\"}/>",
-			"  </head>",
-			"",
-			"  <body>",
-			"    $0",
-			"  </body>",
-			"",
-			"</html>"
-		],
-		"description": "HTML 5 ru"
-
-*/
-
 .hero-scn {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    /*padding-top: 200px;
+    padding-bottom: 200px;*/
     background-color: #2F303A;
     /*background-repeat: no-repeat;
     background-position: center;*/
 }
 
 
-/*.overlay {
-    background-image: url('../photo/other-foto/overlay.jpg'), linear-gradient(#662F303A 100%);
+.overlay {
+    max-width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline:1px solid black;
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../photo/hero/overlay.jpg);
+    background-position: center;
+    
 }
-*/
+
 
 .hero {
     text-align: center;
@@ -235,6 +255,7 @@ body {
 }
 
 .hero-title {
+    padding-top: 200px;
     margin-top: 0;
     margin-bottom: 30px;
     width: 696px;
@@ -311,7 +332,7 @@ body {
 .ourworkimg ul {
     display: flex;
     width: 370px;
-    /*padding-bottom:94px;*/
+    
     margin: 0;
 }
 
@@ -319,15 +340,6 @@ body {
     margin-right: 30px;
 }
 
-
-/*.ourwork{
-    font-family: var(--primary-font-famaly);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    }*/
 
 
 /*  our team    */
@@ -358,9 +370,6 @@ body {
 }
 
 
-/*.ourteam{
-    margin: 0;
-}*/
 
 .ourteam .item:not(:last-child) {
     margin-right: 30px;
@@ -390,6 +399,96 @@ body {
 }
 
 
+/*  соц сети    */
+.master-social{
+    display: flex;
+    justify-content: center;
+}
+.master-social > .master-social:not(:last-child){
+    margin-right: 10px;
+}
+
+.master-social-linc{
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: yellowgreen;
+}
+
+.master-social-icon{
+    width: 20px;   
+    height: 20px;
+}
+
+
+
+
+
+            /*  наши клиенты    */
+
+.our-client-scn{
+    display: flex;
+    justify-content: center;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    width:var(--primary-width);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-client-box{
+    
+
+    width: var(--primary-width);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.our-client-title{
+
+font-family: Roboto;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.our-client-list{
+    display: flex;
+}
+
+.our-client-li{
+    width: 170px;
+height: 90px;
+}
+
+.our-client-list{
+width: 170px;
+height: 90px;
+}
+
+.our-client-href{
+
+}
+
+.our-client-svg{
+
+}
+
+
+
+
+
+
 /* footer */
 
 footer {
@@ -416,9 +515,7 @@ footer .item:not(:last-child) {
 }
 
 
-/*footer .item{
-    margin-bottom: 9px;
-}*/
+
 
 .webfoot {
     font-family: Raleway;
@@ -459,6 +556,14 @@ address {
     text-align: left;
     color: rgba(255, 255, 255, 0.8);
 }
+
+
+
+
+
+
+
+
 
 
 /* стили portfolios.html*/
