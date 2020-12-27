@@ -7,6 +7,7 @@
     --connect-color: #757575;
     --primary-font-famaly: Roboto;
     --primary-width: 1200px;
+    --color-social-link:#AFB1B8;
 }
 
 img {
@@ -57,8 +58,6 @@ body {
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    /*padding-top: 94px;
-    padding-bottom: 94px;*/
 }
 
 
@@ -173,24 +172,18 @@ body {
 }
 
 
-
 /*  befor conect*/
 .icon-header{
     padding-right:10px;
     fill: var(--connect-color);
 }
 
-.icon-header:hover,
-.icon-header:focus{
-    color: var(--accent-color);
+
+.conect-address:hover .icon-header,
+.conect-address:focus .icon-header{
+   
     fill: var(--accent-color);
 }
-
-/*.conect-address:hover,
-.conect-address:focus{
-    color: var(--accent-color);
-
-}*/
 
 
 
@@ -283,6 +276,21 @@ body {
 .features .item {
     width: 270px;
 }
+
+.features-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 4px;
+    height: 120px;
+    max-width: 270px;
+    background-color: #F5F4FA;
+    
+   margin-bottom:30px;
+}
+
+
 
 .features h3 {
     font-family: var(--primary-font-famaly);
@@ -379,31 +387,41 @@ body {
 }
 
 
-/*  соц сети    */
+/*  соц сети конды  */
+
 .master-social{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
-.master-social > .master-social:not(:last-child){
-    margin-right: 10px;
+
+.item-social{
+    display: inline-flex;
+    display:inline-flex;
+    justify-content:center;
 }
 
 .master-social-linc{
     display:inline-flex;
     justify-content:center;
     align-items: center;
-    width: 44px;
+     width: 44px;
     height: 44px;
     border-radius: 50%;
-
-    background-color: yellowgreen;
 }
 
-.master-social-icon{
-    width: 20px;   
-    height: 20px;
+
+.item-social:not(:last-child){
+    margin-right: 10px;
 }
 
+.master-social-linc{
+    fill: var(--color-social-link);
+}
+
+.master-social-linc:hover,
+.master-social-linc:focus{
+    background-color: var(--accent-color);
+    fill:#ffffff
+}
 
 
 
@@ -414,23 +432,21 @@ body {
     display: flex;
     justify-content: center;
 
-
     margin-left: auto;
     margin-right: auto;
     width:var(--primary-width);
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
 .our-client-box{
     
-
     width: var(--primary-width);
     padding-right: 15px;
     padding-left: 15px;
 }
-
 .our-client-title{
+
+margin:0 auto 50px;
 
 font-family: Roboto;
 font-weight: bold;
@@ -443,30 +459,30 @@ color: #212121;
 }
 
 .our-client-list{
-    display: flex;
-}
-
-.our-client-li{
-    width: 170px;
-height: 90px;
-}
-
-.our-client-list{
-width: 170px;
-height: 90px;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .our-client-href{
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
 
+    fill:var(--color-social-link);
+    border: 1px solid var(--color-social-link);
+    width: 170px;
+    height: 90px;
 }
 
-.our-client-svg{
-
+.our-client-li:not(:last-child){
+    margin-right: 30px;
 }
 
-
-
-
+.our-client-href:focus,
+.our-client-href:hover{
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
 
 
 /* footer */
@@ -477,25 +493,62 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-color);
+
 }
 
-.ftr {
-    width: var(--primary-width);
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-footer .ftr {
+.footer-firs-div{
     display: flex;
-    flex-direction: column;
+}
+
+.address-ftr {
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 230px;
+    padding-right:70px;
 }
 
 footer .item:not(:last-child) {
     margin-bottom: 9px;
 }
 
+.connect-ftr-ul{
+    text-align: center;
+}
 
+.connect-ftr-li{
+    display: inline-flex;
+    justify-content: center;
+}
 
+.connect-frt-a{
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
+
+    fill:var(--primary-white-color);
+     width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.connect-frt-a:hover,
+.connect-frt-a:focus{
+    background-color: var(--accent-color);
+}
+
+.connect-title{
+    color:var(--primary-white-color);
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
 
 .webfoot {
     font-family: Raleway;
