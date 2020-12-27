@@ -125,24 +125,22 @@ body {
 .link:hover,
 .link:focus {
     color: var(--accent-color);
-    font-family: var(--primary-font-famaly);
+   /* font-family: var(--primary-font-famaly);
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: left;*/
 }
 
 .link:active {
     color: rgb(255, 0, 0);
 }
 
-.link {
-    color: var(--title-text-color);
-}
-
 
 /* box s style for tel and mail*/
+
+
 
 .conect {
     display: flex;
@@ -158,59 +156,41 @@ body {
 }
 
 
-.conect li {
-    display: inline-block;
-    align-items: center;
 
-    font-family: var(--primary-font-famaly);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+
+.conect-address{
+    display: inline-flex;
+  align-items: center;
+  
+  text-decoration: none;
+
+  font-family: var(--primary-font-famaly);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--connect-color);
 }
-
-.conect .link {
-    color: var(--connect-color);
-}
-
-.conect p:hover,
-.conect p:focus {
-    color: var(--accent-color);
-}
-
-
-
 
 
 
 /*  befor conect*/
-.icon-mail{
-    width: 15px;
-    height: 10px;
-    color: currentColor;
+.icon-header{
+    padding-right:10px;
+    fill: var(--connect-color);
 }
 
-
-
-.icon-mail:focus,
-.icon-mail:hover{
-    color:var(--accent-color);
+.icon-header:hover,
+.icon-header:focus{
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
-.icon-smartfon{
-width: 16px;
-height: 12px;
-color: currentColor;
-}
+/*.conect-address:hover,
+.conect-address:focus{
+    color: var(--accent-color);
 
-.mail ::before{
-    content: "";
-
-
-    
-}
-
-
+}*/
 
 
 
