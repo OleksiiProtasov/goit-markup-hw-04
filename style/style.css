@@ -201,24 +201,17 @@ body {
 /*   hero   */
 
 
-.hero-scn {
-    /*padding-top: 200px;
-    padding-bottom: 200px;*/
-    background-color: #2F303A;
-    /*background-repeat: no-repeat;
-    background-position: center;*/
-}
 
 
 .overlay {
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     outline:1px solid black;
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../photo/hero/overlay.jpg);
+    background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url(../photo/hero/overlay.jpg), #2F303A;
     background-position: center;
-    
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
 }
 
 
@@ -254,6 +247,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     outline: transparent;
+
 }
 
 
