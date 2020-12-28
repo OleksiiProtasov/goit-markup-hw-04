@@ -671,7 +671,7 @@ address {
 
 
 .img-portfolio .item {
-    
+    box-sizing: border-box;
      display: block ;
     margin-right: 30px;
     margin-bottom: 30px;
