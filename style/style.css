@@ -687,7 +687,9 @@ address {
 .img-portfolio .item:hover{
     cursor: pointer;
     box-sizing: border-box;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     outline:none;
@@ -718,6 +720,7 @@ address {
     line-height: 36px;
     letter-spacing: 0.06em;
     text-align: left;
+    color: #212121;
 }
 
 .aboutwedo {
@@ -729,4 +732,5 @@ address {
     line-height: 30px;
     letter-spacing: 0.03em;
     text-align: left;
+    color:var(--connect-color);
 }
