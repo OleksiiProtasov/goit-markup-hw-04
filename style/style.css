@@ -154,13 +154,10 @@ body {
     margin-right: 50px;
 }
 
-
-
-
 .conect-address{
   display: inline-flex;
   align-items: center;
-  
+  font-family: Roboto;
   text-decoration: none;
   font-family: var(--primary-font-famaly);
   font-weight: 500;
@@ -172,20 +169,16 @@ body {
 
 
 /*  befor conect*/
+
 .icon-header{
     padding-right:10px;
     fill: var(--connect-color);
 }
 
-
 .conect-address:hover .icon-header,
 .conect-address:focus .icon-header{
-   
     fill: var(--accent-color);
 }
-
-
-
 
 
 
@@ -199,7 +192,7 @@ body {
 
 /*   hero   */
 
-.overlay {
+.hero-scn{
     margin-left: auto;
     margin-right: auto;
     outline:1px solid black;
@@ -427,29 +420,23 @@ body {
 .our-client-scn{
     display: flex;
     justify-content: center;
-
-    
     padding-top: 94px;
     padding-bottom: 94px;
 }
 .our-client-box{
-    
     width: var(--primary-width);
     padding-right: 15px;
     padding-left: 15px;
 }
 .our-client-title{
-
-margin:0 auto 50px;
-
-font-family: Roboto;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-
-color: #212121;
+    margin:0 auto 50px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 .our-client-list{
@@ -462,15 +449,12 @@ color: #212121;
     justify-content:center;
     align-items: center;
     box-sizing: border-box;
-
     fill:var(--color-social-link);
     border: 1px solid var(--color-social-link);
     width: 170px;
     height: 90px;
     border-radius: 4px;
 }
-
-
 
 .our-client-li:not(:last-child){
     margin-right: 30px;
@@ -499,7 +483,6 @@ footer {
 }
 
 .address-ftr {
-    
     display: flex;
     flex-wrap: wrap;
 
@@ -545,7 +528,6 @@ footer .item:not(:last-child) {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-align: left;
-
 }
 
 .webfoot {
@@ -566,7 +548,7 @@ footer .item:not(:last-child) {
     color: var(--primary-white-color);
 }
 
-address {
+.address {
     padding-top: 20px;
     padding-bottom: 9px;
     font-family: var(--primary-font-famaly);
@@ -586,6 +568,7 @@ address {
     letter-spacing: 0.03em;
     text-align: left;
     color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.03em;
 }
 
 
